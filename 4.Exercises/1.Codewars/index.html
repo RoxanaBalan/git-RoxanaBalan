@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercises</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container navigation">
+        <div class="nav-bar-linedown ">
+            <ul class="nav-buttons-clwss ">
+                <li>
+                    <a href="#h1-numbers">NUMBERS (4)</a>
+                </li>
+                <li>
+                    <a href="#h1-strings">STRINGS (13)</a>
+                </li>
+                <li>
+                    <a href="#h1-arrays">ARRAYS (12)</a>
+                </li>
+                <li>
+                    <a href="#h1-objects">OBJECTS (5)</a>
+                </li>
+                <li>
+                    <a href="#shopping">MENU</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 p-5">
+        <h1 id="h1-numbers">1. NUMBERS</h1>
+        <div class="p-3">
+            <h5>
+                1. Divide number 1 to number 2. If one of the two inputs are not numbers show an error message. Also if number 2 is 0 show an error message, else show the result.
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="number-1">Number 1</label>
+            <input class="form-control" type="text" id="number-1" placeholder="Number 1">
+            <label class="form-label" for="number-2">Number 2</label>
+            <input class="form-control" type="text" id="number-2" placeholder="Number 2">
+        </div>
+        <div class="p-3">
+            <button id="calculate" class="btn btn-secondary">
+                Calculate
+            </button>
+        </div>
+        <div id="result-calculate" class="p-3"></div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                2. You need to generate a random number between 1 and 10 when this page is loaded. In the following input the user should guess the random number. When the number is guessed you should show the tries number. If the number is not guessed you need to show
+                the message "Try again". If in the input is not introduced a number you need to inform the user.
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="user-number">Number:</label>
+            <input class="form-control" type="text" id="user-number" placeholder="Number">
+        </div>
+        <div class="p-3">
+            <button id="verify-generated-number" class="btn btn-secondary">
+                Verify number
+            </button>
+        </div>
+        <div id="result-verify-number" class="p-3"></div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5 ">
+        <div class="p-3 ">
+            <h5>
+                3. Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+            </h5>
+        </div>
+        <div class="p-3 ">
+            <label class="form-label " for="sum-input">Number:</label>
+            <input class="form-control " type="text " id="sum-input" placeholder="Number">
+
+            <div class="p-3 ">
+                <button id="sum-for-button" class="btn btn-secondary">
+                SUM FOR
+            </button>
+                <button id="sum-while-button" class="btn btn-secondary">
+                SUM WHILE
+            </button>
+                <button id="sum-r1-button" class="btn btn-secondary">
+                SUM RECURSIVITY 1
+            </button>
+                <button id="sum-r2-button" class="btn btn-secondary">
+                SUM RECURSIVITY 2
+            </button>
+                <div id="sum-all-container" class="p-3 "></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                4. Read the year, month and day for 2 persons and show a message saying which person is born first. Show error messages if there is no data in all inputs, if there are not numbers in all inputs.
+            </h5>
+        </div>
+        <div class="p-3">
+            <strong>Date person 1: </strong>
+            <label for="textbox">An :</label>
+            <input type="text" id="year1" />
+            <label for="textbox">Luna :</label>
+            <input type="text" id="month1" />
+            <label for="textbox">Zi :</label>
+            <input type="text" id="day1" />
+        </div>
+        <div class="p-3">
+            <strong>Date person 2: </strong>
+            <label for="textbox">An :</label>
+            <input type="text" id="year2" />
+            <label for="textbox">Luna :</label>
+            <input type="text" id="month2" />
+            <label for="textbox">Zi :</label>
+            <input type="text" id="day2" />
+        </div>
+        <div class="p-3">
+            <button id="compare-dates" class="btn btn-secondary">
+                Compare dates
+            </button>
+        </div>
+        <div id="result-compare-dates" class="p-3"></div>
+    </div>
+
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <h1 id="h1-strings">2. STRINGS</h1>
+        <div class="p-3">
+            <h5>
+                1. In the following input type a word and add it to the given text.
+            </h5>
+        </div>
+        <div class="p-3">
+            <label for="textbox">Add a word to the following text:</label>
+            <input type="text" id="word" />
+        </div>
+        <div class="p-3">
+            <button id="add-word" class="btn btn-secondary">
+                Add word
+            </button>
+        </div>
+        <div class="p-3">
+            <span>JavaScript is </span>
+            <span id="added-text"></span>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                2. Print the longest word from a phrase.
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="long-word-input">Enter your text here:</label>
+            <input class="form-control" type="text" id="long-word-input" placeholder="Example: Hello Javascript => Javascript">
+        </div>
+        <div class="p-3">
+            <button id="long-word-button" class="btn btn-secondary">
+                Longest Word
+            </button>
+        </div>
+        <div id="long-word-container" class="p-3"></div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                3. Reverse the entire text.
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="reverse-text-input">Enter your text here:</label>
+            <input class="form-control" type="text" id="reverse-text-input" placeholder="Example: Hello World => dlroW olleH">
+        </div>
+        <div class="p-3">
+            <button id="reverse-text-button" class="btn btn-secondary">
+                Reverse 
+            </button>
+        </div>
+        <div id="reverse-text-container" class="p-3"></div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                4. Reverse each word
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="reverse-word-input">Enter your text:</label>
+            <input class="form-control" type="text" id="reverse-word-input" placeholder="Example: Hello World => olleH dlroW">
+
+            <div class="p-3">
+                <button id="reverse-word-button" class="btn btn-secondary">
+                Reverse each word
+            </button>
+            </div>
+            <div id="reverse-word-container" class="p-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                5. Capital Letter
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="capital-letter-input">Enter your text here:</label>
+            <input class="form-control" type="text" id="capital-letter-input" placeholder="Example: javascript => Javascript">
+        </div>
+        <div class="p-3">
+            <button id="capital-letter-button" class="btn btn-secondary">
+                Capital Letter
+            </button>
+        </div>
+        <div id="capital-letter-container" class="p-3"></div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                6. Iterate a string
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="char-input">Enter the character here:</label>
+            <input class="form-control" type="text" id="char-input" placeholder="Character">
+            <label class="form-label" for="size-input">Enter the size here:</label>
+            <input class="form-control" type="text" id="size-input" placeholder="Size">
+        </div>
+        <div class="p-3">
+            <button id="iterate-string-button" class="btn btn-secondary">
+                Iterate
+            </button>
+        </div>
+        <div id="iterate-string-container" class="p-3"></div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                7. Check if exist the substring "can someone explain" at the beggining of the sentence.
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="substring-input">Enter your text:</label>
+            <input class="form-control" type="text" id="substring-input" placeholder="Example: Can someone explain me that? => true">
+
+            <div class="p-3">
+                <button id="substring-button" class="btn btn-secondary">
+                Substring
+            </button>
+            </div>
+            <div id="substring-container" class="p-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                8. Remove character from a string
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="remove-char-input">Enter your text:</label>
+            <input class="form-control" type="text" id="remove-char-input" placeholder="Text">
+            <label class="form-label" for="index-char-input">Enter number:</label>
+            <input class="form-control" type="text" id="index-char-input" placeholder="Index">
+            <div class="p-3">
+                <button id="remove-char-button" class="btn btn-secondary">
+                Remove character
+            </button>
+            </div>
+            <div id="remove-char-container" class="p-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                9. Check if the text is a palindrom.
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="palindrom-input">Enter your text:</label>
+            <input class="form-control" type="text" id="palindrom-input" placeholder="Text">
+            <div class="p-3">
+                <button id="palindrom-button" class="btn btn-secondary">
+                Palindrom
+            </button>
+            </div>
+            <div id="palindrom-container" class="p-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5 ">
+        <div class="p-3 ">
+            <h5>
+                10.CHECK STRING
+            </h5>
+        </div>
+        <div class="p-3 ">
+            <label class="form-label " for="check-string-input">Text:</label>
+            <input class="form-control " type="text " id="check-string-input" placeholder="Example: Hello World => It's a string.">
+
+            <div class="p-3 ">
+                <button id="check-string-button" class="btn btn-secondary ">
+                CHECK STRING
+            </button>
+            </div>
+            <div id="check-string-container" class="p-3 "></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5 ">
+        <div class="p-3 ">
+            <h5>
+                11.HIDE EMAIL
+            </h5>
+        </div>
+        <div class="p-3 ">
+            <label class="form-label " for="hide-email-input ">Email:</label>
+            <input class="form-control " type="text " id="hide-email-input" placeholder="Example: robin_singh@gmail.com => robin****@gmail.com">
+
+            <div class="p-3 ">
+                <button id="hide-email-button" class="btn btn-secondary ">
+                HIDE EMAIL
+            </button>
+            </div>
+            <div id="hide-email-container" class="p-3 "></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5 ">
+        <div class="p-3 ">
+            <h5>
+                12.CHECK WORD IN A STRING
+            </h5>
+        </div>
+        <div class="p-3 ">
+            <label class="form-label" for="strng-input">Enter your text</label>
+            <input class="form-control" type="text" id="strng-input" placeholder="Example: The quick brown the fox jumps over the dog, the => 3">
+            <label class="form-label" for="word-str-input">Enter word</label>
+            <input class="form-control" type="text" id="word-str-input" placeholder="Word">
+
+            <div class="p-3 ">
+                <button id="word-str-button" class="btn btn-secondary ">
+                CHECK WORD
+            </button>
+            </div>
+            <div id="word-str-container" class="p-3 "></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <h1 id="h1-arrays">3. ARRAYS</h1>
+        <div class="p-3">
+            <h5>
+                1. Read two lists of students in the input fields. The students needs to be separated by ";". Compare the lists of students and show a error message.
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="textbox">Students list 1:</label>
+            <input class="form-control" type="text" id="students-list-1" placeholder="Example: Tom;Alice;Martin;" />
+            <label class="form-label" for="textbox">Students list 2:</label>
+            <input class="form-control" type="text" id="students-list-2" placeholder="Example: Stephane;Ed;Anne;Elisabete;Richard;" />
+        </div>
+        <div class="p-3">
+            <button id="compare-students" class="btn btn-secondary">
+                Compare
+            </button>
+        </div>
+        <div id="result-compare" class="p-3"></div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                2. In this app you need to create the global variable MOVIES. For each movie you need to store the title and the seen status. When click on the button "Check movies status", for every movie from the list show if the movie is seen or not. Example:
+                <ul>
+                    <li>Already saw Narcos</li>
+                    <li>I still need to see Narcos Mexico</li>
+                </ul>
+            </h5>
+        </div>
+        <div class="p-3">
+            <button id="check-movies-status" class="btn btn-secondary">
+                CHECK MOVIES STATUS
+            </button>
+        </div>
+        <div id="result-movies-status" class="p-3"></div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                3. Print all the even numbers from your list [2, 1, 5, 28, 20, 22, 63, 2, 17, 46] and reverse them.
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="user-number">Numbers:</label>
+            <input class="form-control" type="text" id="user-numbers" placeholder="Number">
+        </div>
+        <div class="p-3">
+            <button id="reverse-numbers" class="btn btn-secondary">
+                Reverse even numbers
+            </button>
+        </div>
+        <div id="reverse-even-numbers" class="p-3"></div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                4. Descending numbers
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="descending-number1-input">Enter first number</label>
+            <input class="form-control" type="text" id="descending-number1-input" placeholder="number 1">
+
+            <label class="form-label" for="descending-number2-input">Enter second number</label>
+            <input class="form-control" type="text" id="descending-number2-input" placeholder="number 2">
+
+            <label class="form-label" for="descending-number3-input">Enter third number</label>
+            <input class="form-control" type="text" id="descending-number3-input" placeholder="number 3"></div>
+        <div class="p-3">
+            <button id="descending-numbers-button" class="btn btn-secondary">
+                Descending numbers
+            </button>
+        </div>
+        <div id="descending-numbers-container" class="p-3"></div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                5. Min and Max value from a list using FOR [10, 50, 2, 4, 6, 345, 0, -22, 4, 56]. The numbers needs to be separated by " , ".
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="min-max-input">Numbers:</label>
+            <input class="form-control" type="text" id="min-max-input" placeholder="Numbers">
+
+
+            <div class="p-3">
+                <button id="min-max-button" class="btn btn-secondary">
+                Min and Max
+            </button>
+            </div>
+            <div id="min-max-container" class="p-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                6. Max value from a list using WHILE [2, -28, 63, 19, 182, 46]. The numbers needs to be separated by " , ".
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="min-max-while-input">Numbers:</label>
+            <input class="form-control" type="text" id="min-max-while-input" placeholder="Numbers">
+
+            <div class="p-3">
+                <button id="min-max-while-button" class="btn btn-secondary">
+                Max
+            </button>
+            </div>
+            <div id="min-max-while-container" class="p-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                7. Return the total of Negative and Positive numbers from a list using FOR [2, -28, 63, -19, 182, 46, -111, 31]
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="neg-pos-input">Numbers:</label>
+            <input class="form-control" type="text" id="neg-pos-input" placeholder="Numbers">
+
+            <div class="p-3">
+                <button id="neg-pos-button" class="btn btn-secondary">
+                Negative and Positive
+            </button>
+            </div>
+            <div id="neg-pos-container" class="p-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                8. Sorting array [5, 3, 1, 4, 6]
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="sort-array-input">Numbers:</label>
+            <input class="form-control" type="text" id="sort-array-input" placeholder="Numbers">
+
+            <div class="p-3">
+                <button id="sort-array-button" class="btn btn-secondary">
+                Sorting array
+            </button>
+            </div>
+            <div id="sort-array-container" class="p-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                9. Given the list of numbers, return the list so that the values increment by 1. For each index up to the maximum value. Example: Input: 1, 3, 5, 6, 7, 8 & Output: 1, 2, 3, 4, 5, 6, 7, 8
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="missing-num-input">Numbers:</label>
+            <input class="form-control" type="text" id="missing-num-input" placeholder="Numbers">
+            <div class="p-3">
+                <button id="missing-num-button" class="btn btn-secondary">
+                Missing numbers
+            </button>
+            </div>
+            <div id="missing-num-container" class="p-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                10. ARRAYS
+                <ul>
+                    <li>First case: arrayElements() => [ ]</li>
+                    <li>Second case: [1, 2, 3, 4, 5] => 1</li>
+                    <li>Third case: [1, 2, 3, 4, 5], 3 => 1, 2, 3</li>
+                    <li>Fourth case: [1, 2, 3, 4, 5], -3 => [ ]</li>
+                </ul>
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="array-input">Numbers:</label>
+            <input class="form-control" type="text" id="array-input" placeholder="Numbers">
+            <label class="form-label" for="arrayN-input">Enter the value of N:</label>
+            <input class="form-control" type="text" id="arrayN-input" placeholder="Index">
+            <div class="p-3">
+                <button id="array-button" class="btn btn-secondary">
+                ARRAY
+            </button>
+            </div>
+            <div id="array-container" class="p-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                11.You will be given an array of numbers. For each number in the array you will need to create an object. The object key will be the number, as a string. The value will be the corresponding character code, as a string. Return an array of the resulting
+                objects. All inputs will be arrays of numbers. All character codes are valid lower case letters. The input array will not be empty.
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="obj-in-list-input">Numbers:</label>
+            <input class="form-control" type="text" id="obj-in-list-input" placeholder="Example: [118, 117, 120]) => [{ '118': 'v' }, { '117': 'u' }, { '120': 'x' }]">
+
+            <div class="p-3">
+                <button id="obj-in-list-button" class="btn btn-secondary">
+                OBJECTS IN LIST
+            </button>
+            </div>
+            <div id="obj-in-list-container" class="p-3"></div>
+        </div>
+    </div>
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                12.Invert values. Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="invert-input">Numbers:</label>
+            <input class="form-control" type="text" id="invert-input" placeholder="Example: [1, -2, 3, -4, 5] => [-1, 2, -3, 4, -5]">
+
+            <div class="p-3">
+                <button id="invert-button" class="btn btn-secondary">
+                INVERT
+            </button>
+            </div>
+            <div id="invert-container" class="p-3"></div>
+        </div>
+    </div>
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                13.Find numbers which are divisible by given number. Complete the function which takes two arguments and returns all numbers // which are divisible by the given divisor.First argument is an array of numbers and the second is the divisor. // divisibleBy([1,
+                2, 3, 4, 5, 6], 2) == [2, 4, 6]
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="divisibleby-list-input">Numbers:</label>
+            <input class="form-control" type="text" id="divisibleby-list-input" placeholder="Example: [1, 2, 3, 4, 5, 6], 2) => [2, 4, 6]">
+            <label class="form-label" for="divisibleby-number-input">Numbers:</label>
+            <input class="form-control" type="text" id="divisibleby-number-input" placeholder="Number">
+            <div class="p-3">
+                <button id="divisibleby-button" class="btn btn-secondary">
+                Divisible 
+            </button>
+            </div>
+            <div id="divisibleby-container" class="p-3"></div>
+        </div>
+    </div>
+
+    <div class="container rounded-3 mt-3 p-5">
+        <h1 id="h1-objects">4. OBJECTS</h1>
+        <div class="p-3">
+            <h5>
+                1. OBJECT GREET
+                <ul>
+                    <li>english: 'Welcome'</li>
+                    <li>czech: 'Vitejte'</li>
+                    <li>danish: 'Velkomst'</li>
+                    <li>dutch: 'Welkom'</li>
+                    <li>estonian: 'Tere tulemast'</li>
+                    <li>finnish: 'Tervetuloa'</li>
+                    <li>flemish: 'Welgekomen'</li>
+                    <li>french: 'Bienvenue'</li>
+                    <li>german: 'Willkommen'</li>
+                    <li>irish: 'Failte'</li>
+                    <li>italian: 'Benvenuto'</li>
+                    <li>latvian: 'Gaidits'</li>
+                    <li>lithuanian: 'Laukiamas'</li>
+                    <li>polish: 'Witamy'</li>
+                    <li>spanish: 'Bienvenido'</li>
+                    <li>swedish: 'Valkommen'</li>
+                    <li>welsh: 'Croeso'</li>
+                </ul>
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="obj-greet-input">Enter the language:</label>
+            <input class="form-control" type="text" id="obj-greet-input" placeholder="Text">
+
+            <div class="p-3">
+                <button id="obj-greet-button" class="btn btn-secondary">
+                GREET
+            </button>
+            </div>
+            <div id="obj-greet-container" class="p-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                2. You have the Person class. You need to create two instances of the class Person with different details. For the first person you need to call the class method "bio" when clicking on the "PERSON 1 BIO" button, and for the second person you need to call
+                the classs method "greeting" when click on the "PERSON 2 GREETING" button. For each of them you need to show the informations. Also you have the following issues here:
+                <ul>
+                    <li> a) the output always includes the pronoun "He", even if your person is female</li>
+                    <li> b) bio only includes two interests, even if more are listed in the interests array</li>
+                    <li> c) the greeting includes just the first name</li>
+                    <li> d) we use function instead of class for the constructor function</li>
+                </ul>
+                Please fix also these issues.
+            </h5>
+        </div>
+        <div class="p-3">
+            <button id="person-1-bio-button" class="btn btn-secondary">
+                PERSON 1 BIO
+            </button>
+            <button id="person-2-greeting-button" class="btn btn-secondary">
+                PERSON 2 GREETING
+            </button>
+        </div>
+        <div id="person-1-bio" class="p-3"></div>
+        <div id="person-2-greeting" class="p-3"></div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                3. In this app you have the global variable STUDENT.
+                <ul>
+                    <li> a) When click on the button "IS OBJECT" show true or false depending if the variable is object or not. </li>
+                    <li> b) When click on the button "PRINT KEYS", print the keys of the object.</li>
+                    <li> c) When click on the button "PRINT KEYS AND VALUES", print the key and the values of the object. </li>
+                    <li> d) When click on "OBJECT LENGTH" show the number of properties from object </li>
+                    <li> e) When click on the button "DELETE PROPERTIES", delete all the properties from object.</li>
+                </ul>
+            </h5>
+        </div>
+        <div class="p-3">
+            <button id="is-object" class="btn btn-secondary">
+                IS OBJECT
+            </button>
+            <button id="print-keys" class="btn btn-secondary">
+                PRINT KEYS
+            </button>
+            <button id="print-keys-and-values" class="btn btn-secondary">
+                PRINT KEYS AND VALUES
+            </button>
+            <button id="object-length" class="btn btn-secondary">
+                OBJECT LENGTH
+            </button>
+            <button id="delete-properties" class="btn btn-secondary">
+                DELETE PROPERTIES
+            </button>
+        </div>
+        <div id="result-object" class="p-3"></div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5">
+        <div class="p-3">
+            <h5>
+                4.The code provided is supposed return a person's Full Name given their first and last names. But it's not working properly. Fix the bug so we can all go home early. The first and / or last names are never null, but may be empty.
+            </h5>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="obj-full-name-input">Enter the first and the last name:</label>
+            <input class="form-control" type="text" id="obj-full-name-input" placeholder="Example: Clint, Eastwood => Clint Eastwood ">
+
+            <div class="p-3 ">
+                <button id="obj-full-name-button" class="btn btn-secondary ">
+                OBJECTS FULL NAME
+            </button>
+            </div>
+            <div id="obj-full-name-container" class="p-3 "></div>
+        </div>
+    </div>
+
+
+    <div class="container rounded-3 mt-3 p-5 ">
+        <div class="p-3 ">
+            <h5>
+                5.OBJECTS USER
+            </h5>
+        </div>
+        <div class="p-3 ">
+            <label class="form-label" for="obj-user-input">Text:</label>
+            <input class="form-control" type="text" id="obj-user-input" placeholder="Text">
+
+            <div class="p-3 ">
+                <button id="display-user-button" class="btn btn-secondary">
+                DISPLAY USER
+            </button>
+                <button id="add-user-button" class="btn btn-secondary">
+                ADD USER
+            </button>
+                <button id="remove-user-button" class="btn btn-secondary">
+                REMOVE USER
+            </button>
+            </div>
+            <div id="obj-user-container" class="p-3"></div>
+        </div>
+    </div>
+
+
+    <script src="script.js "></script>
+    <!-- <script type="module" src="./js/main.js"></script> -->
+</body>
+
+</html>
