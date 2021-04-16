@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav bg-fixed fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HomemadeCakebyRoxy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="article-list.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="article-list.html">Online Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="article-list.html">Cake Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="article-list.html">Contact</a></li>
+                            <li><a class="dropdown-item" href="article-list.html">Cake shop</a></li>
+                            <li><a class="dropdown-item" href="article-list.html">Cake</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 border-bottom pt-5 pb-5 mt-5">
+                <p class="display-5 fw-bold text-center">Login</p>
+                <form>
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="user-name-input">
+                                User name
+                            </label>
+                            <input type="text" class="form-control" id="user-name-input" placeholder="Your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="user-password mt-5">
+                                Password
+                            </label>
+                            <input type="password" class="form-control" id="user-password">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check mt-1">
+                                <input class="form-check-input" type="checkbox" value="" id="remember-me">
+                                <label class="form-check-label" for="remember-me">
+                                    Remember me
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-1">Log in</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+</body>
+
+</html>

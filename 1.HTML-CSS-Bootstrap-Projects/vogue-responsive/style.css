@@ -1,0 +1,391 @@
+    /* Reset CSS */
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+a,
+img,
+i,
+ul,
+li,
+form,
+footer,
+header,
+nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+footer,
+header,
+menu,
+nav {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+/*MY CODE */
+
+* {
+    --columns: 10;
+    --column-gutter: 24px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    max-height: calc(100vh - 20px);
+    margin: 0;
+}
+
+
+/*NAVIGATION BAR*/
+
+.nav-bar-wrapper {
+    display: grid;
+    grid-template-columns: 290px auto 290px;
+    grid-template-rows: auto 80px;
+    text-align: center;
+    letter-spacing: .092em;
+    text-transform: uppercase;
+    min-width: 600px;
+}
+
+.nav-bar-lineup-logo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 25px;
+}
+
+.nav-bar-lineup-registration {
+    grid-column: 3 / 3;
+    grid-row: 1 / 2;
+    padding: 25px;
+}
+
+.nav-bar-linedown {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.nav-account a,
+.nav-buttons-clwss a {
+    text-decoration: none;
+    color: #333;
+}
+
+#search-button {
+    width: 15px;
+}
+
+.nav-buttons-clwss {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-account {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-account li {
+    padding: 15px;
+    word-spacing: 3em;
+    font-size: 0.8em !important;
+    /* width: 100vh; */
+}
+
+
+/*LANDSCAPE PICTURE*/
+
+.img-landscape {
+    width: 75%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.img-landscape h1 {
+    font-family: Savoy, helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2.8em;
+    text-align: right;
+    line-height: 1.4em;
+    right: 0;
+}
+
+.big-title {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 750px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+
+/*SIMPLE TEXT*/
+
+.container-text {
+    font-family: Savoy, helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    flex: 1 1 600px;
+    color: #7b7a7aed;
+    line-height: 1.6em;
+    letter-spacing: normal;
+    font-family: Savoy, helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+}
+
+.mytext {
+    font-size: 1.1em;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.mytext {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* position: absolute; */
+    min-width: 600px;
+    margin-left: 250px;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.container-text h1 {
+    font-size: 2.5em;
+}
+
+
+/*MY GALLERY*/
+
+.my-wall {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-column-gap: var(--column-gutter);
+}
+
+.my-wall img {
+    width: 550px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px;
+}
+
+
+/*FOOTER NAVIGATION*/
+
+.footer-bar-wrapper {
+    width: calc(100vh-100px);
+    max-height: 100%;
+    background-color: #212529;
+    display: grid;
+    grid-template-columns: 100px 650px 350px 250px;
+    grid-template-rows: auto 80px;
+    text-align: center;
+    letter-spacing: .092em;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    padding: 20px;
+}
+
+.footer-bar-lineup-logo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 0.8em;
+    line-height: 2em;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-social-media li {
+    margin-top: 20px;
+}
+
+.footer-bar-lineup-list {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 100%;
+    font-size: 0.9em;
+    margin-top: 65px;
+}
+
+.footer-bar-lineup-topics {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    font-size: 0.9em;
+    margin-top: 65px;
+}
+
+.footer-account a,
+.footer-buttons-clwss a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+.footer-buttons-clwss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    line-height: 30px;
+    font-size: 0.8em !important;
+}
+
+.footer-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    line-height: 30px;
+    font-size: 0.8em !important;
+}
+
+
+/*PAGINATION*/
+
+.pagination {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 1em;
+}
+
+.nav-pagination ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2em;
+    margin: 15px;
+}
+
+.nav-pagination li {
+    margin-bottom: .5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 7px;
+    color: #c3a8c7;
+    border-radius: 38px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    width: 50px;
+    height: 39px;
+    text-align: center;
+    line-height: 24px;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+}
+
+
+/*just a test*/
+
+.toggleNav {
+    display: none;
+}
+
+.nav-bar-linedown ul {
+    display: flex;
+}
+
+.nav-bar-linedown li {
+    flex: 3;
+}
+
+@media all and (max-width:1024px) {
+    .nav-bar-linedown ul {
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    .nav-bar-linedown li {
+        flex: 1 1 50%;
+    }
+    /* This is where the magic Happens */
+    @media all and (max-width:500px) {
+        .container-text .mytext {
+            font-size: 1.1em;
+            min-width: 450px;
+        }
+        .img-landscape h1 {
+            font-size: 2em;
+            width: 450px;
+        }
+        .my-wall img {
+            grid-template-columns: repeat(1, 1fr);
+            max-width: 500px;
+        }
+        .nav-bar-linedown li {
+            flex-basis: 100%;
+        }
+        /* Turn on flexbox */
+        .nav-bar-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-bar-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        /* Reorder items */
+        .nav-bar-wrapper>* {
+            order: 999;
+        }
+        /* Nav */
+        .nav-bar-linedown {
+            order: 1;
+        }
+        .toggleNav {
+            display: block;
+        }
+        .nav-bar-linedown ul {
+            display: none;
+        }
+        .nav-bar-linedown ul.open {
+            display: flex;
+        }
+    }
+}
+    /*Effects*/

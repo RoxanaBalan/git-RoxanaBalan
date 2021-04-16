@@ -1,0 +1,169 @@
+    html,
+    body,
+    div,
+    span,
+    h1,
+    h2,
+    p,
+    a,
+    img,
+    ol,
+    ul,
+    li,
+    form,
+    label,
+    table,
+    article,
+    aside,
+    footer,
+    header,
+    menu,
+    nav,
+    section {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    footer,
+    header,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body,
+    html {
+        line-height: 1;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    /*My CSS*/
+    /*HEADER*/
+    
+    nav {
+        font-size: 1.5em;
+        width: 89%;
+        height: 80px;
+        background-color: #f2e9e4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #22223b;
+    }
+    
+    ul {
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    ul li {
+        margin: 10px;
+    }
+    /*MAIN*/
+    
+    .mycontent {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 95%;
+        margin: 2em;
+    }
+    
+    section article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* height: 95%; */
+        font-size: 1.3em;
+        line-height: 1.4em;
+    }
+    
+    .home {
+        color: #f2e9e4;
+        display: inline-block;
+        margin: 10px;
+    }
+    
+    article div a {
+        color: #f2e9e4;
+    }
+    
+    article div p {
+        margin: 40px;
+    }
+    
+    article {
+        background-color: #4a4e69;
+        color: #f2e9e4;
+        flex: 1 400px;
+        margin: 10px;
+        margin-left: 100px;
+        padding: 10px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    
+    aside {
+        background-color: #f2e9e4;
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    aside a {
+        text-decoration: none;
+        color: #22223b;
+        font-size: 1.4em;
+        margin: 10px
+    }
+    
+    footer {
+        background-color: #22223b;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2px 87px;
+        width: 90%;
+        height: 4em;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: #f2e9e4;
+    }
+    
+    footer div {
+        text-align: center;
+        color: #f2e9e4;
+    }
