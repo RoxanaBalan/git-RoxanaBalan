@@ -1,0 +1,39 @@
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.sub-title {
+  font-size: 30px;
+}
+
+.card {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  padding: 20px;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid blue;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card.full-width h1 {
+  cursor: pointer;
+}
